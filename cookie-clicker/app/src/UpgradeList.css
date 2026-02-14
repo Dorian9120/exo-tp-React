@@ -1,0 +1,66 @@
+.upgrade-list {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 400px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.upgrade-list h2 {
+  margin-top: 40px;
+  font-size: 18px;
+  text-align: center;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 5px;
+}
+
+.upgrade-list .h2-multi {
+  margin-top: 30px;
+}
+
+.upgrade-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.upgrade-list button {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  cursor: pointer;
+  transition:
+    transform 0.1s ease,
+    background-color 0.2s ease;
+}
+
+.upgrade-list button:hover:not(:disabled) {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.02);
+}
+
+.upgrade-list button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.niveau-actif {
+  color: gold;
+  font-weight: bold;
+}
